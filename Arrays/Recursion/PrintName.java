@@ -1,0 +1,22 @@
+package Recursion;
+
+// import java.util.Scanner;
+
+public class PrintName {
+     static void printName(int n){
+
+        if(n==0){
+            return;
+        }
+
+        System.out.print("Abhi ");
+
+        printName(n-1);
+    }
+
+    public static void main(String[] args){
+    
+        printName(5);
+    }
+}
+

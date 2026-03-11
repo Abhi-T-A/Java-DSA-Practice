@@ -1,0 +1,40 @@
+size=10
+Length=10
+
+A={8,9,4,7,6,3,10,5,14,2}
+i will start 0th index
+
+Successful search---key=5
+unsuccesfull search---key=12
+
+algo:
+
+for(i=0;i<length;i++){
+    if(key=A[i]){
+        return i;// found
+    }
+    return -1;//if we got -1 not found
+}
+
+time complexity:
+if we fount element in first place o(1) Best case ----this case is successful search
+if we searching element found at last place o(n) worst case--- this is for worst case 
+1+2+3+.....+n avg case is o(n)  n(n+1)/2/n =n+1/2
+
+1.transposition
+for(i=0;i<length;i++){ // for repeatedly searching element we can add this we call as transposition
+    if(key=A[i]){
+        swap(A[i],A[i-1]);
+    return -1;
+}
+}
+
+
+2move to front / Head
+
+for(i=0;i<length;i++){
+    if(key=A[i]){
+        swap(A[i],A[0]);// 
+        return 0;
+    }
+}
